@@ -1,7 +1,7 @@
 <form (ngSubmit)="save()">
   <input class="new-todo" autofocus
          name="newTodo"
-         on-escape="onEscape()"
+         (onEscape)="onEscape()"
          [(ngModel)]="text"
          placeholder="{{placeholder}}" />
 </form>

@@ -11,7 +11,9 @@ import {AutofocusDirective} from "./autofocus.directive";
         FormsModule
     ],
     declarations: [
-        TodoTextInput
+        TodoTextInput,
+        EscapeDirective,
+        AutofocusDirective
     ]
 })
 export class TodoTextInputModule {}
