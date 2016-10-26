@@ -1,6 +1,7 @@
-<form ng-submit="vm.save()">
-  <input class="new-todo" autofocus=""
-         on-escape="vm.onEscape()"
-         ng-model="vm.text"
-         placeholder="{{vm.placeholder}}" />
+<form (ngSubmit)="save()">
+  <input class="new-todo" autofocus
+         name="newTodo"
+         on-escape="onEscape()"
+         [(ngModel)]="text"
+         placeholder="{{placeholder}}" />
 </form>

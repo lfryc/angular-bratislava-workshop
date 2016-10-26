@@ -1,39 +1,34 @@
-class TodoTextInputController {
+import {Component, Input, Output} from "@angular/core";
+import {EventEmitter} from "@angular/common/src/facade/async";
+
+@Component({
+  selector: 'todo-text-input',
+  template: require('./todoTextInput.component.html')
+})
+export class TodoTextInput {
+
+  @Input()
+  placeholder;
+
+  @Input()
+  value;
+
+  @Output()
+  onSave: EventEmitter<any> = new EventEmitter();
 
   text;
-  placeholder;
-  onSave;
-
-  value;
 
   constructor() {
     this.text = this.value || '';
   }
 
   save() {
-    this.onSave({
-      task: this.text
-    });
+    this.onSave.emit(this.text);
 
     this.text = '';
   }
 
   onEscape() {
-    this.onSave({
-      task: this.value
-    });
+    this.onSave.emit(this.value);
   }
 }
-
-angular
-  .module('app.todoTextInput')
-  .component('todoTextInput', {
-    bindings: {
-      placeholder: '@',
-      value: '@',
-      onSave: '&'
-    },
-    template: require('./todoTextInput.component.html'),
-    controller: TodoTextInputController,
-    controllerAs: 'vm'
-  });
