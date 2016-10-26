@@ -4,7 +4,7 @@ angular
       bindings: {
         task: '=todo'
       },
-      templateUrl: 'app/components/todoItem.component.html',
+      template: require('./todoItem.component.html'),
       controller: TodoItemController,
       controllerAs: 'vm'
     }

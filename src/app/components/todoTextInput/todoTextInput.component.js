@@ -6,7 +6,7 @@ angular
       value: '@',
       onSave: '&'
     },
-    templateUrl: 'app/components/todoTextInput/todoTextInput.component.html',
+    template: require('./todoTextInput.component.html'),
     controller: TodoTextInputController,
     controllerAs: 'vm'
   });

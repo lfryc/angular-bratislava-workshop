@@ -5,7 +5,7 @@ angular
       onFilter: '&',
       filterState: '='
     },
-    templateUrl: 'app/components/todoListFilter.component.html',
+    template: require('./todoListFilter.component.html'),
     controller: TodoListFilter,
     controllerAs: 'vm'
   });

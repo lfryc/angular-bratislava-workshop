@@ -1,7 +1,7 @@
 angular
   .module('app')
   .component('app', {
-    templateUrl: 'app/app.component.html',
+    template: require('./app.component.html'),
     controller: TodoAppController
   });
 

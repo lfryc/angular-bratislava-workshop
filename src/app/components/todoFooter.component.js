@@ -3,7 +3,7 @@ angular
   .component('todoFooter', {
     bindings: {},
     transclude: true,
-    templateUrl: 'app/components/todoFooter.component.html',
+    template: require('./todoFooter.component.html'),
     controller: TodoFooterController,
     controllerAs: 'vm'
   });

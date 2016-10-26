@@ -5,7 +5,7 @@ angular
       onToggle: '&',
       todos: '='
     },
-    templateUrl: 'app/components/todoBatchToggle.component.html',
+    template: require('./todoBatchToggle.component.html'),
     controller: BatchTogglerController,
     controllerAs: 'vm'
   });
