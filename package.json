@@ -61,7 +61,7 @@
     "webpack-merge": "^0.15.0"
   },
   "scripts": {
-    "start": "echo Lets wait for workshop to start..."
+    "start": "gulp serve"
   },
   "license": "Apache-2.0"
 }
