@@ -37,7 +37,6 @@
     "@types/node": "^6.0.45",
     "angular2-template-loader": "^0.4.0",
     "awesome-typescript-loader": "^2.2.4",
-    "baggage-loader": "^0.2.4",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^2.0.0-beta.4",
     "file-loader": "^0.8.5",
